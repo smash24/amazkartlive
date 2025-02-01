@@ -11,12 +11,21 @@ exports.getProducts = async (req,res)=>{
 
      }}:{}
 
-    const products = await ProductModel.find(query)
+     
+    
+     try{
+     
+     const products = await ProductModel.find(query)
+
+    
 
     res.json({
        success: true,
        products
-    })
+    })}
+     catch(err){
+        console.log(err)
+    }
 
     
 

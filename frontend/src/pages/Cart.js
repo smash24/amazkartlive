@@ -146,10 +146,10 @@ export default function Cart({cartItems , setCartItems}){
          </div>
      </div>
  </div>
-</div>
+</div><br/><br/><br/>
           </Fragment> : ( !complete ? <> <h2 className="mt-5">Your Cart is Empty!</h2> <br/><br/><br/><br/>
-          <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+          <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
           </>: <><h2 className="mt-5" > Thanks for Shopping with us </h2><br/><br/><br/><br/>
-          <br/><br/><br/><br/><br/><br/><br/><br/><br/></>)
+          <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></>)
 
 }
