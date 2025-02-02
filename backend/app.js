@@ -26,7 +26,9 @@ app.use("/", function(req,res){
 
 connectDatabase();
 
+const PORT = process.env.PORT || 3000; 
 
-app.listen(process.env.PORT,
+
+app.listen(PORT,
      ()=> {
     console.log(`Server running successfully on port ${process.env.PORT} in ${process.env.NODE_ENV}`)}) 
