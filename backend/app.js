@@ -18,11 +18,11 @@ app.use(cors());
 app.use("/api/v1",products)
 app.use("/api/v1",orders)
 
-// app.use("/", function(req,res){
-//      res.json({
-//           message: "hi this is amazkart"
-//      })
-// })
+app.use("/", function(req,res){
+     res.json({
+          message: "hi this is amazkart"
+     })
+})
 
 
 connectDatabase();
